@@ -1,0 +1,76 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://ngocnguyen.com.vn/
+Description: This theme created by Jake Ngoc Nguyen.
+Author: Jake Ngoc Nguyen
+Author URI: https://ngocnguyen.com.vn/
+Template: hello-elementor
+Version: 1.0.1
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/*
+    Add your custom styles here
+*/
+
+.comment-notes, .comment-form-cookies-consent, #comments .comment .avatar, .comment-metadata, .says, .title-comments{
+	display:none;
+}
+#comments .comment .comment-body, #comments .pingback .comment-body {
+    display: flex;
+    flex-direction: column;
+	  padding-inline-start: 0px;
+}
+.comment-respond {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.comment-respond form {
+    width: 100%; /* Bạn có thể điều chỉnh theo ý muốn, ví dụ: 50%, 70%, v.v. */
+    max-width: 600px; /* Đặt giới hạn chiều rộng tối đa cho form */
+}
+
+.comment-form p label {
+    width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+#comments .comment .comment-body, #comments .pingback .comment-body {
+    padding-block-end: 5px;
+    padding-block-start: 10px;
+}
+.comment-form input[type="submit"] {
+    display: block;
+    margin: 20px auto; /* Căn giữa nút gửi bình luận */
+	  color: #fff;
+	background: #6D3E28;
+}
+.comment-list {
+    height: 400px; /* Đặt chiều cao cố định */
+    overflow-y: auto; /* Cho phép cuộn dọc */
+	margin-bottom: 20px;
+}
+/* Tùy chỉnh thanh cuộn */
+.comment-list::-webkit-scrollbar {
+    width: 2px; /* Độ rộng của thanh trượt */
+}
+
+.comment-list::-webkit-scrollbar-track {
+    background-color: #d3d3d3; /* Màu nền của đường trượt */
+}
+
+.comment-list::-webkit-scrollbar-thumb {
+    background-color: #333; /* Màu của thanh trượt */
+    border-radius: 4px; /* Bo tròn các góc của thanh trượt */
+}
+
+/* Thêm hiệu ứng hover cho thanh trượt */
+.comment-list::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Màu khi hover */
+}
